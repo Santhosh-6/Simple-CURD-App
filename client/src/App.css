@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    max-width: 600px;
+    margin: 20px auto;
+}
+h3{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+.btn{
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 4px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.green{
+    background-color: #4caf58;
+}
+.btn.green:hover{
+    background-color: #45a049;
+}
+.red{
+    background-color: #e8410d;
+}
+.btn.red:hover{
+    background-color: #e51313;
+}
+.input-search input{
+    width: 300px;
+    padding: 8px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.input-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;    
+}
+.table{
+    width: 100%;
+    border-collapse: collapse; 
+    cursor: pointer;
+}
+.table th,
+.table td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.table thead{
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+.table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.table tr:hover{
+    background-color: #ddd;
+}
+.model{
+    display: block;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+.model-container{
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,.close:focus{
+    color: black;
+    cursor: pointer;
+}
+.model h2{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.input-group{
+    margin-bottom: 10px;
+ }
+.input-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+.input-group input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+}

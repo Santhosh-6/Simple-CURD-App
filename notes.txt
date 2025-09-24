@@ -1,0 +1,37 @@
+npm init -y
+npm i express cros
+npm i nodemon -D
+
+ "start":"nodemon index.js"
+
+<=index.js=>
+1.import express package=>const express=require("express");
+2.express ku new server create pannurathu ku => const app=express();
+3.ethu run aaga port namakku veanum athuku(.env->file la dedicated aa set pannalaam) => const port =8000;(some port number)
+4.entha server a start panna app.listen(portno,callback func)
+    app.listen(port,(err)=>{
+        console.log(`app is running in port ${port}`);
+    })
+    eahavathu error eruntha entha err call aagidum
+5.if we run the code(file) the server will start to run
+6.user oda details sa json form la display pann=>route one nu create pannuvom
+   app.get("url",callback fun)=>url la call panna entha fun nadakkum
+   =>app.get("/users",(req,res)=>{});
+   response parameter la json data va kudukkanum
+7.add the sample json file in the server folder
+8.import the json file in the index.js 
+=>const var_name(users)=require("./sample.json");
+9. =>app.get("/users",(req,res)=>{
+    return res.json(users);
+});
+10.if we run the file =>npm start
+if we check in postman or thunderclient
+
+border-collapse: collapse;->single border 
+
+if the browser blocks my backend server due to CORS
+const cors=require("cors");
+app.use(cors({
+    origin:"http://localhost:5173",
+    credentials:true
+}));
