@@ -1,12 +1,12 @@
 # 📝 Simple CRUD App
 
-A full-stack CRUD (Create, Read, Update, Delete) application developed using the MERN stack. This project allows users to add, view, edit, and delete records through a responsive web interface while storing data securely in MongoDB.
+A simple full-stack CRUD (Create, Read, Update, Delete) application developed using React.js, Node.js, and Express.js. This project allows users to create, view, update, and delete records through a responsive interface, with data stored locally in a json file.
 
 ---
 
 ## 📌 Project Overview
 
-The Simple CRUD App demonstrates the implementation of fundamental database operations using modern web technologies. It provides a complete workflow between frontend and backend components.
+The Simple CRUD App demonstrates the implementation of basic CRUD operations using modern web technologies. Instead of using a database, the application stores and retrieves records from a local JSON file.
 
 The application allows users to:
 
@@ -14,9 +14,9 @@ The application allows users to:
 * View stored records
 * Update existing data
 * Delete records
-* Store and retrieve data from MongoDB
+* Store and retrieve data using a JSON file
 
-This project was developed as a practical implementation of MERN stack concepts and full-stack development principles.
+This project was developed to understand frontend-backend communication and REST API concepts.
 
 ---
 
@@ -24,7 +24,7 @@ This project was developed as a practical implementation of MERN stack concepts 
 
 ✔ Create new records
 
-✔ Read and display records
+✔ Display stored records
 
 ✔ Update existing data
 
@@ -34,7 +34,7 @@ This project was developed as a practical implementation of MERN stack concepts 
 
 ✔ Responsive user interface
 
-✔ MongoDB database connectivity
+✔ Local JSON file storage
 
 ✔ Dynamic frontend updates
 
@@ -78,10 +78,9 @@ Simple-CURD-App/
 │   │   └── index.js
 │
 ├── server/
-│   ├── models/
 │   ├── routes/
 │   ├── controllers/
-│   ├── config/
+│   ├── sample.json
 │   └── server.js
 │
 └── README.md
@@ -116,6 +115,7 @@ Install frontend dependencies:
 cd client
 npm install
 ```
+
 ---
 
 ## ▶ Running the Project
@@ -133,14 +133,15 @@ Start frontend:
 cd client
 npm start
 ```
+
 ---
 
 ## 🔄 Application Workflow
 
 1. User enters data into form
-2. Data is sent through API request
-3. Backend processes request
-4. MongoDB stores data
+2. Data is sent through API requests
+3. Backend processes the request
+4. Data is stored in `sample.json`
 5. Stored records are displayed
 6. User can edit or delete records
 
@@ -153,3 +154,6 @@ Santhosh S
 GitHub:
 
 https://github.com/Santhosh-6
+
+
+If you found this project useful, please give it a star ⭐
