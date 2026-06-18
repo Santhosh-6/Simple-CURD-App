@@ -56,10 +56,6 @@ This project was developed as a practical implementation of MERN stack concepts 
 * Node.js
 * Express.js
 
-### Database
-
-* MongoDB Atlas
-
 ### Tools
 
 * Git
@@ -120,19 +116,6 @@ Install frontend dependencies:
 cd client
 npm install
 ```
-
----
-
-## Configure Environment Variables
-
-Create a `.env` file in the server folder:
-
-```env
-MONGO_URI=your_mongodb_connection_string
-
-PORT=5000
-```
-
 ---
 
 ## ▶ Running the Project
@@ -150,21 +133,6 @@ Start frontend:
 cd client
 npm start
 ```
-
-Application runs on:
-
-Frontend:
-
-```bash
-http://localhost:3000
-```
-
-Backend:
-
-```bash
-http://localhost:5000
-```
-
 ---
 
 ## 🔄 Application Workflow
