@@ -88,8 +88,6 @@ Simple-CURD-App/
 │   ├── config/
 │   └── server.js
 │
-├── package.json
-├── .env
 └── README.md
 ```
 
